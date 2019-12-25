@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+
+
+<form  action="firstpage.html">
+	<div class="container-fluid">
+		<div class="col-sm-4 text-left" align="center">
+			
+							
+						<br><br><b>UserName:</b> <input type="text" name="uname" placeholder="enter email id" required><br><br>
+					
+							
+					<b> Password:</b> <input type="Password" name="upass" placeholder="enter your Password" required><br><br>
+					
+			
+								
+			        <button type="submit" class="btn btn-success "  onclick="return check(this.form)" value="login">login</button>		<br>
+					
+
+		</div>
+	</div>
+</form>
+<script>
+	
+	function check(form)
+{
+
+if(form.uname.value == "demo" && form.upass.value == "demo")
+{
+	return true;
+}
+else
+{
+	alert("err ENTER PROPER DETAILS")
+	return false;
+}
+}
+</script>
+
+</body>
+</html>
